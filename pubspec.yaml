@@ -1,0 +1,81 @@
+name: beauty_booking_app
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  esewa_flutter_sdk:
+    path: ./esewa_flutter_sdk
+
+  cupertino_icons: ^1.0.8
+  another_flushbar: ^1.12.30
+  dio: ^5.7.0
+  hive_flutter: ^1.1.0
+  pretty_dio_logger: ^1.4.0
+  shared_preferences: ^2.3.4
+  multi_select_flutter: ^4.1.3
+  uuid: ^4.5.1
+  dartz: ^0.10.1
+  path_provider: ^2.1.5
+  equatable: ^2.0.7
+  image_picker: ^1.1.2
+  awesome_dio_interceptor: ^1.3.0
+  json_annotation: ^4.9.0
+  connectivity_plus: ^6.1.1
+  permission_handler: ^11.3.1
+  json_serializable: ^6.9.0
+  get_it: ^8.0.3
+  bloc: ^8.1.4
+  flutter_svg: ^2.0.17
+  lottie: ^3.3.1
+  flutter_bloc: ^8.1.6
+  test_cov_console: ^0.2.2
+  mocktail: ^1.0.4
+  bloc_test: ^9.1.7
+  google_fonts: ^6.2.1
+  animate_do: ^4.2.0
+  sensors_plus: ^6.1.1
+  http: ^1.3.0
+  intl: ^0.20.2
+  test: ^1.25.8
+  proximity_sensor: ^1.3.8
+  mockito: ^5.4.5
+  flutter_launcher_icons: ^0.14.3
+  coverage: ^1.11.1
+  esewa_flutter: ^2.0.0
+  fluttertoast: ^8.2.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.14
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/fonts/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf
+        - asset: assets/fonts/Montserrat-Italic.ttf
+        - asset: assets/fonts/Montserrat-Regular.ttf
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/bnw.png"
