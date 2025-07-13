@@ -1,0 +1,56 @@
+@BASE_URL = http://localhost:7000/users
+@TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODczM2U1NGJmYzg4ZDM0OGUyMzRlOGMiLCJpYXQiOjE3NTIzODQ5NTl9.1Np4ynRHkbFE0xa7r5YfubJcyQfTPbeoU8p4ZoBveOA
+
+# LOGIN
+POST {{BASE_URL}}/login
+Content-Type: application/json
+
+{
+    "email": "sujinasht307@gmail.com",
+    "password": "sujina12345"
+}
+###
+
+# Register
+POST {{BASE_URL}}/register
+Content-Type: application/json
+
+{
+    "name": "Sujina",
+    "email": "sujinasht307@gmail.com",
+    "password": "sujina123",
+    "phone": "1234567890"  
+}
+###
+
+# Reset User Password
+POST {{BASE_URL}}/reset-code
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "email": "sujinasht3071@gmail.com"
+}
+
+###
+
+# Create New Password
+POST {{BASE_URL}}/new-password
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "email": "" ,
+    "resetCode": "123456",
+    "newPassword": "sujina123" 
+}
+
+###
+
+
+# Get User Profile
+GET {{BASE_URL}}/
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
